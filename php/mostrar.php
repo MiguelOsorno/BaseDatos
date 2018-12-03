@@ -42,6 +42,8 @@ while($fila= mysqli_fetch_assoc($resultado)){
  echo       "<td>".$fila["semestre"]."</td>";
  echo       "<td>".$fila["carrera"]."</td>";
  echo       '<td>'.'<a href="editar.php?id='.$fila['clave'].'"><div class="btn btn-warning">Editar</div></a>'.'</td>';
+ echo       '<td>'.'<a href="eliminar.php?id='.$fila['clave'].'"><div class="btn btn-warning">Eliminar</div></a>'.'</td>';
+
  echo   "</tr>";
 }
 echo "</table>";
